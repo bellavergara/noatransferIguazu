@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Noa Transfer Iguazú Traslados</title>
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS -->
+  <link href="./dist/output.css" rel="stylesheet" />
+</head>
+
+<body
+  style="
+    background-image: url('./assets/images/ruta-misiones.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  "
+  class="min-h-screen font-['Montserrat'] text-gray-800"
+>
+
+  <!-- Capa translúcida suave -->
+  <div class="min-h-screen bg-white/30">
+
+
+  <!-- Imagen de fondo ocupando todo el body -->
+  <div class="fixed inset-0 bg-cover bg-center -z-10" 
+       style="background-image: url('./assets/images/ruta-misiones.png');">
+  </div>
+<!-- Franja translúcida un poco más opaca -->
+<div class="fixed inset-0 bg-white/45 -z-5"></div>
+<!-- NAVBAR -->
+<header class="fixed w-full bg-noa-green/50 backdrop-blur-md shadow-md z-50">
+  <nav class="container mx-auto px-6 py-1.5 flex justify-between items-center">
+
+    <!-- LOGO -->
+    <div class="flex items-center my-2">
+      <a
+        href="#home"
+        class="bg-white rounded-full px-5 py-3 shadow-md ring-1 ring-black/5"
+      >
+        <img
+          src="./assets/images/logo.png"
+          alt="Noa Transfer Iguazú"
+          class="h-20 md:h-24 w-auto"
+        />
+      </a>
+    </div>
+
+
+    <!-- MENÚ -->
+    <ul class="hidden md:flex space-x-6 text-gray-950 font-medium">
+      <li><a href="#Nosotros" class="hover:text-noa-green-dark">Nosotros</a></li>
+      <li><a href="#Servicios" class="hover:text-noa-green-dark">Servicios</a></li>
+      <li><a href="#Destinos" class="hover:text-noa-green-dark">Destinos</a></li>
+      <li><a href="#Galeria" class="hover:text-noa-green-dark">Galería</a></li>
+      <li><a href="#Contacto" class="hover:text-noa-green-dark">Contacto</a></li>
+      <li><a href="#Reseñas" class="hover:text-noa-green-dark">Reseñas</a></li>
+    </ul>
+
+  </nav>
+</header>
+
+  <!-- HERO -->
+  <section id="home" class="pt-24 min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
+    <h1 class="text-5xl font-extrabold mb-4 text-noa-green-dark font-montserrat z-10 relative">Noa Transfer Iguazú</h1>
+    <p class="text-lg md:text-xl text-gray-700 max-w-xl mb-8 z-10 relative">
+      Traslados privados y personalizados para recorrer Puerto Iguazú y sus maravillas naturales.
+    </p>
+    <a href="https://wa.me/5493757589868" target="_blank"
+       class="relative inline-flex items-center bg-noa-green-dark text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-noa-green hover:shadow-2xl transition duration-300 overflow-hidden group z-10">
+       Contactar por WhatsApp
+       <span class="absolute -top-2 -right-2 w-4 h-4 bg-noa-green rounded-full animate-bounce"></span>
+    </a>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section id="nosotros" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 relative backdrop-blur-sm">
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <h2 class="text-3xl font-bold mb-4 text-noa-green-dark font-montserrat">¿Quiénes somos?</h2>
+      <p class="text-gray-600 mb-6">
+        En Noa Transfer Iguazú nos especializamos en traslados turísticos con atención personalizada, experiencia local y compromiso con tu comodidad y seguridad.
+      </p>
+      <p class="text-gray-600">
+        Conocemos cada rincón de Iguazú y te ofrecemos la mejor forma de recorrerlo.
+      </p>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="py-16 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-noa-green-dark font-montserrat">Nuestros Servicios</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">Traslados Aeropuerto</h3>
+          <p class="text-gray-600">Servicio confiable desde y hacia el aeropuerto.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">Excursiones Turísticas</h3>
+          <p class="text-gray-600">Tours a Cataratas, Minas de Wanda y más.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">City Tours</h3>
+          <p class="text-gray-600">Visitas a puntos emblemáticos y actividades.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTINOS TURISTICOS -->
+  <section id="destinos" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-noa-green-dark font-montserrat">Destinos Turísticos</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/cataratas-arg.jpg" alt="Cataratas Argentinas">
+          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Cataratas Argentinas</h4>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/cataratas-br.jpg" alt="Cataratas Brasileñas">
+          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Cataratas Brasileñas</h4>
+        </div>
+        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/ciudad-este.jpg" alt="Ciudad del Este">
+          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Ciudad del Este</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" class="py-16 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-8 text-noa-green-dark font-montserrat">Galería de Fotos</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="./assets/images/galeria1.jpg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" alt="">
+        <img src="./assets/images/galeria2.jpg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" alt="">
+        <img src="./assets/images/galeria3.jpg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" alt="">
+        <img src="./assets/images/galeria4.jpg" class="rounded-lg shadow-lg hover:scale-105 transition-transform duration-300" alt="">
+      </div>
+    </div>
+  </section>
+
+  <!-- VIDEO DE PRESENTACIÓN -->
+  <section class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-4 text-noa-green-dark font-montserrat">Mirá a Cristian en acción</h2>
+      <div class="relative w-full rounded-xl overflow-hidden shadow-lg" style="padding-top: 56.25%;">
+        <iframe class="absolute top-0 left-0 w-full h-full" 
+                src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="Presentación Noa Transfer Iguazú" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHOFERES -->
+  <section class="py-20 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-12 text-noa-green-dark font-montserrat">Nuestros Choferes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/chofer1.jpg" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Cristian">
+          <h3 class="text-xl font-semibold text-noa-green-dark">Cristian</h3>
+          <p class="text-gray-600">Chofer profesional con amplia experiencia turística.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/chofer2.jpg" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Marcelo">
+          <h3 class="text-xl font-semibold text-noa-green-dark">Marcelo</h3>
+          <p class="text-gray-600">Experto en tours locales y atención personalizada.</p>
+        </div>
+        <div class="bg-white rounded-xl shadow-md p-6 hover:scale-105 transition-transform duration-300">
+          <img src="./assets/images/chofer3.jpg" class="w-24 h-24 mx-auto rounded-full object-cover mb-4" alt="Luis">
+          <h3 class="text-xl font-semibold text-noa-green-dark">Luis</h3>
+          <p class="text-gray-600">Conductor con conocimiento profundo de la región.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO Y CTA -->
+  <section id="contacto" class="py-20 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 text-center backdrop-blur-sm">
+    <h2 class="text-3xl font-bold mb-6 text-noa-green-dark font-montserrat">Contáctanos</h2>
+    <p class="text-gray-600 mb-8">Escribinos por WhatsApp y organizamos tu traslado.</p>
+    <a href="https://wa.me/5493757589868" target="_blank"
+       class="relative inline-flex items-center bg-noa-green-dark text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-noa-green hover:shadow-2xl transition duration-300 overflow-hidden group">
+       WhatsApp
+       <span class="absolute -top-2 -right-2 w-4 h-4 bg-noa-green rounded-full animate-bounce"></span>
+    </a>
+  </section>
+
+  <!-- WHATSAPP FLOTA -->
+  <a href="https://wa.me/5493757589868" target="_blank"
+     class="fixed bottom-6 right-6 bg-noa-green-dark text-white p-4 rounded-full shadow-xl hover:bg-noa-green transition">
+    💬
+  </a>
+
+  <!-- FOOTER -->
+  <footer class="py-6 text-center text-gray-500 text-sm bg-noa-green/50 backdrop-blur-sm">
+    © 2025 Noa Transfer Iguazú · Puerto Iguazú, Misiones
+  </footer>
+
+</body>
+</html>
