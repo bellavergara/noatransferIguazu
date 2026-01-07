@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* HERO SLIDESHOW */
+@keyframes heroSlideshow {
+  0% {
+    background-image: url('../assets/images/cataratas.png');
+  }
+  50% {
+    background-image: url('../assets/images/cataratas2.png');
+  }
+  100% {
+    background-image: url('../assets/images/cataratas.png');
+  }
+}
+
+.hero-slideshow {
+  animation: heroSlideshow 18s ease-in-out infinite;
+  background-size: cover;
+  background-position: center;
+}

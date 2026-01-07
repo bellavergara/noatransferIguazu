@@ -12,31 +12,15 @@
 </head>
 
 <body
-  style="
-    background-image: url('./assets/images/ruta-misiones.png');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-  "
-  class="min-h-screen font-['Montserrat'] text-gray-800"
+ class="min-h-screen font-['Montserrat'] text-gray-800 bg-[#F5F1EB]">
 >
 
-  <!-- Capa translúcida suave -->
-  <div class="min-h-screen bg-white/30">
-
-
-  <!-- Imagen de fondo ocupando todo el body -->
-  <div class="fixed inset-0 bg-cover bg-center -z-10" 
-       style="background-image: url('./assets/images/ruta-misiones.png');">
-  </div>
-<!-- Franja translúcida un poco más opaca -->
-<div class="fixed inset-0 bg-white/45 -z-5"></div>
 <!-- NAVBAR -->
-<header class="fixed w-full bg-noa-green/50 backdrop-blur-md shadow-md z-50">
+<header class="fixed w-full bg-noa-green-dark backdrop-blur-md shadow-md z-50 border-b-4 border-[#8B5E3C]">
   <nav class="container mx-auto px-6 py-1.5 flex justify-between items-center">
 
     <!-- LOGO -->
-    <div class="flex items-center my-2">
+    <div class="flex items-center">
       <a
         href="#home"
         class="bg-white rounded-full px-5 py-3 shadow-md ring-1 ring-black/5"
@@ -49,87 +33,286 @@
       </a>
     </div>
 
-
     <!-- MENÚ -->
-    <ul class="hidden md:flex space-x-6 text-gray-950 font-medium">
-      <li><a href="#Nosotros" class="hover:text-noa-green-dark">Nosotros</a></li>
-      <li><a href="#Servicios" class="hover:text-noa-green-dark">Servicios</a></li>
-      <li><a href="#Destinos" class="hover:text-noa-green-dark">Destinos</a></li>
-      <li><a href="#Galeria" class="hover:text-noa-green-dark">Galería</a></li>
-      <li><a href="#Contacto" class="hover:text-noa-green-dark">Contacto</a></li>
-      <li><a href="#Reseñas" class="hover:text-noa-green-dark">Reseñas</a></li>
-    </ul>
+
+    
+<ul class="hidden md:flex space-x-8 text-white font-medium">
+  <li>
+    <a href="#Home" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Home
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+  <li>
+    <a href="#Nosotros" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Nosotros
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#Servicios" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Servicios
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#Destinos" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Destinos
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+
+
+
+  <li>
+    <a href="#Contacto" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Contacto
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+
+  <li>
+    <a href="#Reseñas" class="relative group">
+      <span class="transition-colors duration-300 group-hover:text-[#f5f1eb]">
+        Reseñas
+      </span>
+      <span class="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#f5f1eb] transition-all duration-300 group-hover:w-full"></span>
+    </a>
+  </li>
+</ul>
+
 
   </nav>
 </header>
 
-  <!-- HERO -->
-  <section id="home" class="pt-24 min-h-screen flex flex-col justify-center items-center text-center px-6 relative">
-    <h1 class="text-5xl font-extrabold mb-4 text-noa-green-dark font-montserrat z-10 relative">Noa Transfer Iguazú</h1>
-    <p class="text-lg md:text-xl text-gray-700 max-w-xl mb-8 z-10 relative">
-      Traslados privados y personalizados para recorrer Puerto Iguazú y sus maravillas naturales.
-    </p>
-    <a href="https://wa.me/5493757589868" target="_blank"
-       class="relative inline-flex items-center bg-noa-green-dark text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-noa-green hover:shadow-2xl transition duration-300 overflow-hidden group z-10">
-       Contactar por WhatsApp
-       <span class="absolute -top-2 -right-2 w-4 h-4 bg-noa-green rounded-full animate-bounce"></span>
-    </a>
-  </section>
 
-  <!-- NOSOTROS -->
-  <section id="nosotros" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 relative backdrop-blur-sm">
-    <div class="max-w-4xl mx-auto text-center relative z-10">
-      <h2 class="text-3xl font-bold mb-4 text-noa-green-dark font-montserrat">¿Quiénes somos?</h2>
-      <p class="text-gray-600 mb-6">
-        En Noa Transfer Iguazú nos especializamos en traslados turísticos con atención personalizada, experiencia local y compromiso con tu comodidad y seguridad.
-      </p>
-      <p class="text-gray-600">
-        Conocemos cada rincón de Iguazú y te ofrecemos la mejor forma de recorrerlo.
-      </p>
+
+
+<!-- HERO -->
+<section
+  id="home"
+  class="relative min-h-screen flex items-center justify-center text-center px-6 overflow-hidden"
+>
+
+  <!-- SLIDESHOW DE FONDO -->
+  <div class="absolute inset-0 hero-slideshow bg-cover bg-center"></div>
+
+  <!-- OVERLAY SUAVE -->
+  <div class="absolute inset-0 bg-white/30"></div>
+
+  <!-- CONTENIDO CON MARCO -->
+  <div
+    class="relative z-10 inline-block px-12 py-10
+           rounded-3xl
+           bg-[rgba(245,241,235,0.15)]
+           border-2 border-[#8B5E3C]
+           shadow-[0_8px_30px_rgba(0,0,0,0.15)]
+           transition-all duration-500
+           hover:shadow-[0_0_35px_rgba(139,94,60,0.3)]"
+  >
+
+    <!-- TÍTULO -->
+    <h1 class="text-5xl md:text-6xl lg:text-7xl font-medium font-montserrat leading-tight mb-6">
+      <span class="block text-black">
+        Traslados privados en
+      </span>
+      <span class="block text-noa-green-dark">
+        Puerto Iguazú
+      </span>
+    </h1>
+
+    <!-- TEXTO -->
+    <p class="text-lg md:text-xl text-gray-700 max-w-2xl mx-auto mb-8 leading-relaxed">
+      Aeropuerto, hoteles, Cataratas y excursiones.<br>
+      Puntualidad, comodidad y atención personalizada.
+    </p>
+
+    <!-- BOTÓN -->
+    <a
+      href="https://wa.me/5493757589868"
+      target="_blank"
+      class="inline-flex items-center justify-center
+             bg-noa-green-dark text-white
+             px-12 py-4 rounded-full
+             text-lg font-semibold
+             shadow-lg
+             transition-all duration-300
+             hover:bg-noa-green hover:scale-105"
+    >
+      Contactar por WhatsApp
+    </a>
+
+  </div>
+
+</section>
+
+
+ <!-- NOSOTROS -->
+<section id="nosotros" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 relative backdrop-blur-sm">
+  <div class="max-w-4xl mx-auto text-center relative z-10">
+
+    <!-- TÍTULO -->
+    <h2 class="text-3xl md:text-4xl font-semibold mb-6 text-noa-green-dark font-montserrat leading-tight">
+      Tu traslado seguro y cómodo comienza aquí
+    </h2>
+
+    <!-- PÁRRAFO INTRODUCTORIO -->
+    <p class="text-gray-700 md:text-lg mb-6 leading-relaxed font-roboto">
+      En <strong>Noa Transfer Iguazú</strong> nos encargamos de cada detalle de tu traslado, para que puedas relajarte y disfrutar desde el primer momento de tu viaje. Nuestro compromiso: seguridad, puntualidad y atención personalizada.
+    </p>
+
+    <p class="text-gray-700 md:text-lg mb-8 leading-relaxed font-roboto">
+      Conectamos tu llegada y salida desde aeropuertos, hoteles y los principales atractivos turísticos de Iguazú de manera rápida y confiable. Olvidate de esperas y complicaciones, nosotros nos ocupamos de todo.
+    </p>
+
+    <!-- BENEFICIOS -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-left max-w-3xl mx-auto mb-8">
+      <div class="flex items-start">
+        <span class="w-4 h-4 bg-[#8B5E3C] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+        <p class="text-gray-700 font-roboto"><strong>Traslados Directos:</strong> Sin paradas innecesarias, solo vos y tu comodidad.</p>
+      </div>
+      <div class="flex items-start">
+        <span class="w-4 h-4 bg-[#8B5E3C] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+        <p class="text-gray-700 font-roboto"><strong>Servicio Puntual:</strong> Nos adaptamos a tu horario de vuelos y tours, sin demoras.</p>
+      </div>
+      <div class="flex items-start">
+        <span class="w-4 h-4 bg-[#8B5E3C] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+        <p class="text-gray-700 font-roboto"><strong>Conocimiento Local:</strong> Conductores expertos que conocen cada rincón de Misiones y Foz.</p>
+      </div>
+      <div class="flex items-start">
+        <span class="w-4 h-4 bg-[#8B5E3C] rounded-full mt-2 mr-3 flex-shrink-0"></span>
+        <p class="text-gray-700 font-roboto"><strong>Precios Transparentes:</strong> Tarifas claras, sin sorpresas ni costos ocultos.</p>
+      </div>
     </div>
-  </section>
+
+    <!-- CTA -->
+    <p class="text-gray-700 md:text-lg mb-6 leading-relaxed font-roboto">
+      Dejá tu traslado en manos expertas y empezá tu viaje con tranquilidad. 
+    </p>
+
+    <a href="https://wa.me/5493757589868" target="_blank"
+       class="inline-flex items-center justify-center
+              bg-noa-green-dark text-white
+              px-12 py-4 rounded-full
+              text-lg font-semibold
+              shadow-lg
+              transition-all duration-300
+              hover:bg-noa-green hover:scale-105"
+    >
+      Reservá tu traslado por WhatsApp
+    </a>
+
+  </div>
+</section>
+
+
 
   <!-- SERVICIOS -->
-  <section id="servicios" class="py-16 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8 text-noa-green-dark font-montserrat">Nuestros Servicios</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">Traslados Aeropuerto</h3>
-          <p class="text-gray-600">Servicio confiable desde y hacia el aeropuerto.</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">Excursiones Turísticas</h3>
-          <p class="text-gray-600">Tours a Cataratas, Minas de Wanda y más.</p>
-        </div>
-        <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
-          <h3 class="text-xl font-semibold mb-2 text-noa-green-dark">City Tours</h3>
-          <p class="text-gray-600">Visitas a puntos emblemáticos y actividades.</p>
-        </div>
+<section id="servicios" class="py-16 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+  <div class="max-w-6xl mx-auto text-center">
+
+    <!-- TÍTULO -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-noa-green-dark font-montserrat">
+      Servicios que hacen tu viaje inolvidable
+    </h2>
+
+    <!-- GRID DE SERVICIOS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- SERVICIO 1 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 text-noa-green-dark">✈️ Traslados al Aeropuerto</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Llegá sin preocupaciones: transporte directo, puntual y seguro desde y hacia el aeropuerto. Comodidad total desde el primer momento.
+        </p>
       </div>
+
+      <!-- SERVICIO 2 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 text-noa-green-dark">🌿 Excursiones Turísticas</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Descubrí las maravillas de Iguazú: Cataratas, Minas de Wanda y más, con guías locales expertos y transporte cómodo y seguro.
+        </p>
+      </div>
+
+      <!-- SERVICIO 3 -->
+      <div class="bg-white rounded-xl shadow-lg p-6 hover:scale-105 transition-transform duration-300">
+        <h3 class="text-xl md:text-2xl font-semibold mb-3 text-noa-green-dark">🏙️ City Tours Personalizados</h3>
+        <p class="text-gray-700 leading-relaxed">
+          Explorá la ciudad a tu ritmo. Experiencias únicas y flexibles, diseñadas según tus horarios y preferencias.
+        </p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
+
 
   <!-- DESTINOS TURISTICOS -->
-  <section id="destinos" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
-    <div class="max-w-6xl mx-auto text-center">
-      <h2 class="text-3xl font-bold mb-8 text-noa-green-dark font-montserrat">Destinos Turísticos</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src="./assets/images/cataratas-arg.jpg" alt="Cataratas Argentinas">
-          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Cataratas Argentinas</h4>
-        </div>
-        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src="./assets/images/cataratas-br.jpg" alt="Cataratas Brasileñas">
-          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Cataratas Brasileñas</h4>
-        </div>
-        <div class="rounded-lg overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300">
-          <img src="./assets/images/ciudad-este.jpg" alt="Ciudad del Este">
-          <h4 class="text-xl font-semibold mt-3 text-noa-green-dark">Ciudad del Este</h4>
-        </div>
+<section id="destinos" class="py-16 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+  <div class="max-w-6xl mx-auto text-center">
+
+    <!-- TÍTULO -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-4 text-noa-green-dark font-montserrat">
+      Explorá los Destinos Imperdibles
+    </h2>
+    <p class="text-gray-700 mb-10 leading-relaxed max-w-2xl mx-auto">
+      Descubrí los lugares más emblemáticos de la región de Iguazú y alrededores. Cada destino es una experiencia única que no te podés perder.
+    </p>
+
+    <!-- GRID DE DESTINOS -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <!-- DESTINO 1 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+        <img src="./assets/images/cataratas-arg.jpg" alt="Cataratas Argentinas" class="w-full h-64 object-cover">
+        <h4 class="text-xl md:text-2xl font-semibold mt-4 text-noa-green-dark">
+          Cataratas Argentinas
+        </h4>
+        <p class="text-gray-700 mb-4 px-4">
+          Disfrutá de la majestuosidad de las Cataratas del lado argentino con vistas panorámicas y senderos increíbles.
+        </p>
       </div>
+
+      <!-- DESTINO 2 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+        <img src="./assets/images/cataratas-br.jpg" alt="Cataratas Brasileñas" class="w-full h-64 object-cover">
+        <h4 class="text-xl md:text-2xl font-semibold mt-4 text-noa-green-dark">
+          Cataratas Brasileñas
+        </h4>
+        <p class="text-gray-700 mb-4 px-4">
+          Viví la panorámica más impresionante del lado brasileño y sacá fotos inolvidables en un entorno natural único.
+        </p>
+      </div>
+
+      <!-- DESTINO 3 -->
+      <div class="rounded-xl overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl transition-transform duration-300">
+        <img src="./assets/images/ciudad-este.jpg" alt="Ciudad del Este" class="w-full h-64 object-cover">
+        <h4 class="text-xl md:text-2xl font-semibold mt-4 text-noa-green-dark">
+          Ciudad del Este
+        </h4>
+        <p class="text-gray-700 mb-4 px-4">
+          Descubrí compras, cultura y gastronomía en Ciudad del Este, cruzando la frontera de manera segura y cómoda.
+        </p>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- GALERÍA -->
   <section id="galeria" class="py-16 px-6 bg-noa-green/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
@@ -180,22 +363,81 @@
     </div>
   </section>
 
-  <!-- CONTACTO Y CTA -->
-  <section id="contacto" class="py-20 px-6 bg-white/50 rounded-xl mx-4 md:mx-20 shadow-lg mt-12 text-center backdrop-blur-sm">
-    <h2 class="text-3xl font-bold mb-6 text-noa-green-dark font-montserrat">Contáctanos</h2>
-    <p class="text-gray-600 mb-8">Escribinos por WhatsApp y organizamos tu traslado.</p>
-    <a href="https://wa.me/5493757589868" target="_blank"
-       class="relative inline-flex items-center bg-noa-green-dark text-white px-10 py-4 rounded-full text-lg font-semibold shadow-lg hover:bg-noa-green hover:shadow-2xl transition duration-300 overflow-hidden group">
-       WhatsApp
-       <span class="absolute -top-2 -right-2 w-4 h-4 bg-noa-green rounded-full animate-bounce"></span>
-    </a>
-  </section>
+  <!-- CONTACTO -->
+<section id="contacto" class="py-20 px-6 bg-[rgba(245,241,235,0.15)] rounded-xl mx-4 md:mx-20 shadow-lg mt-12 backdrop-blur-sm">
+  <div class="max-w-4xl mx-auto text-center relative z-10">
 
-  <!-- WHATSAPP FLOTA -->
-  <a href="https://wa.me/5493757589868" target="_blank"
-     class="fixed bottom-6 right-6 bg-noa-green-dark text-white p-4 rounded-full shadow-xl hover:bg-noa-green transition">
-    💬
-  </a>
+    <!-- TÍTULO -->
+    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-noa-green-dark font-montserrat">
+      Contactanos y Organizá Tu Traslado
+    </h2>
+
+    <!-- TEXTO INTRODUCTORIO -->
+    <p class="text-gray-700 mb-12 leading-relaxed">
+      Escribinos tu consulta o reserva y nos encargamos de que tu traslado sea rápido, seguro y sin complicaciones. 
+      Nuestro equipo está listo para ayudarte a planificar tu viaje perfecto.
+    </p>
+
+    <!-- FORMULARIO -->
+    <form class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+
+      <input 
+        type="text" 
+        placeholder="Tu Nombre" 
+        class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-noa-green-dark w-full"
+      />
+
+      <input 
+        type="email" 
+        placeholder="Tu Email" 
+        class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-noa-green-dark w-full"
+      />
+
+      <textarea 
+        placeholder="Tu Mensaje" 
+        rows="4" 
+        class="p-4 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-noa-green-dark w-full md:col-span-2"
+      ></textarea>
+
+    </form>
+
+    <!-- BOTÓN DE ENVÍO -->
+    <a 
+      href="https://wa.me/5493757589868" 
+      target="_blank"
+      class="inline-flex items-center justify-center
+             bg-noa-green-dark text-white
+             px-12 py-4 rounded-full
+             text-lg font-semibold
+             shadow-lg
+             transition-all duration-300
+             hover:bg-noa-green hover:scale-105"
+    >
+      Enviar por WhatsApp
+    </a>
+
+  </div>
+</section>
+
+
+  <!-- WHATSAPP FLOAT BUTTON -->
+<a href="https://wa.me/5493757589868"
+   target="_blank"
+   class="fixed bottom-6 right-6 z-50 w-16 h-16 rounded-full overflow-hidden
+          shadow-xl flex items-center justify-center
+          transition-all duration-300 ease-out
+          hover:scale-110 hover:-translate-y-1
+          hover:shadow-[0_0_25px_rgba(37,211,102,0.55)]">
+
+  <img
+    src="./assets/images/whatsapp.png"
+    alt="WhatsApp"
+    class="w-full h-full object-contain scale-125"
+  />
+</a>
+
+
+
 
   <!-- FOOTER -->
   <footer class="py-6 text-center text-gray-500 text-sm bg-noa-green/50 backdrop-blur-sm">
